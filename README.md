@@ -10,7 +10,7 @@
 2. Install all dependencies:
 
 ```
-$ npm install --save-dev
+$ npm install
 $ bower install
 ```
 
