@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var mainBowerFiles = require('main-bower-files');
+var livereload = require('gulp-livereload')
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/application.css')
@@ -92,10 +93,9 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
+// watch for changes
 gulp.task('watch', ['connect', 'serve'], function () {
-  var server = $.livereload();
-
-  // watch for changes
+  livereload.listen();
 
   gulp.watch([
     'app/*.html',
@@ -103,7 +103,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
     'app/scripts/**/*.js',
     'app/images/**/*'
   ]).on('change', function (file) {
-    server.changed(file.path);
+    livereload.changed(file.path);
   });
 
   gulp.watch('app/styles/**/*.css', ['styles']);
