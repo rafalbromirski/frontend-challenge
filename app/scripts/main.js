@@ -1,5 +1,3 @@
 'use strict';
 
-$(function() {
-  console.log('ready')
-});
+console.log('ready!');

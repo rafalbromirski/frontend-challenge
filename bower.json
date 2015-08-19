@@ -2,9 +2,8 @@
   "name": "fe_task",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
-    "jasmine": "~2.0.4",
-    "jasmine-jquery": "~2.0.5"
+    "jasmine": "~2.3.4",
+    "jasmine-jquery": "~2.1.0"
   },
   "devDependencies": {}
 }

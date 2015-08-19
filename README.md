@@ -10,7 +10,7 @@
 2. Install all dependencies:
 
 ```
-$ npm install --save-dev
+$ npm install
 $ bower install
 ```
 
@@ -20,7 +20,6 @@ $ bower install
 
 ### More Gulp Tasks:
 
-1. `gulp` - generates production files
-2. `gulp serve` - local preview
-3. `gulp watch` - to run development server
-4. `gulp clean` - to clean all files
+1. `gulp` - alias for `gulp watch`
+2. `gulp watch` - to run development server
+3. `gulp clean` - to clean all files

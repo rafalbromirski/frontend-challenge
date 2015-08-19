@@ -4,8 +4,7 @@ body {
 
 .l-container {
   width: 400px;
-  text-align: center;
   margin: 0 auto;
   padding-top: 50px;
+  text-align: center;
 }
-
